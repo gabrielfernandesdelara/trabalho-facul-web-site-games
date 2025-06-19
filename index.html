@@ -1,26 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt_BR"> <!--Linguagem da pagina-->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Linguagem da pagina-->
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro de Games - faculdade</title>
-    <link rel="stylesheet" href="css/style.css"> <!--Importar o CSS-->
-</head>
-<body>
-    <div class="fundo"></div> <!--Clase para o fundo do site-->
-    <div class="botoes"> <!--Div com classe para os botões-->
-        <button class="btinicio" onclick="location.href='index.html'">inicio</button> <!--Leva para o Inicio-->
-        <button class="btlista" onclick="location.href='FormAction.html'">Lista</button> <!--Leva para a sua lista-->
-        <button class="btsobre" onclick="location.href='about.html'">Sobre</button> <!--Leva para o sobre do site-->
+    <!--Importar o CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="quicksand">
+      <!--Clase para o fundo do site-->
+    <div class="fundo"></div>
+    <!--Div com classe para os botões-->
+    <div class="botoes">
+      <!--Leva para o Inicio-->
+      <a href="index.html">
+        <button>Inicio</button>
+      </a>
+      <!--Leva para a sua lista-->
+      <a href="FormAction.html">
+        <button>Lista</button>
+      </a>
+      <!--Leva para o sobre do site-->
+      <a href="about.html">
+        <button>Sobre</button>
+      </a>
     </div>
-    <div class="containerp"> <!--Classe para o container do principal-->
-        <div class="principal"> <!--Classe para o quadrado transparente do site-->
-            <h1 class="nome">MyGameList</h1> 
-            <a class="giticon" href="https://github.com/gabrielfernandesdelara"> 
-                <img src="img/Github.png" alt="Github">
-                <p class="git">Github</p>
-            </a> <!--Link par o meu Github-->
-        </div>
+    <!--Classe para o container do principal-->
+    <div class="container-principal">
+        <!--Classe para o quadrado transparente do site-->
+      <div class="principal">
+        <h1 class="nome">MyGameList</h1>
+        <!--Link par o meu Github-->
+        <a class="giticon" href="https://github.com/gabrielfernandesdelara">
+          <img src="img/Github.png" alt="Github" />
+          <p class="git">Github</p>
+        </a>
+      </div>
     </div>
-</body>
+  </body>
 </html>

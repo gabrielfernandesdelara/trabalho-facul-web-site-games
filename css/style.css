@@ -12,7 +12,7 @@ body {
 }
 
 /* Para deixar no meio o .principal */
-.containerp {
+.container-principal {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -26,7 +26,7 @@ borda arredondada, fundo translúcido e tudo dentro do .principal centralizado *
     min-height: 300px;
     padding: 40px;
     border: 10px solid #6328774f;
-    border-radius: 20%;
+    border-radius: 36px;
     background-color: #8c51eb4d;
     box-sizing: border-box;
     display: flex;
@@ -52,26 +52,23 @@ centralização dos botões*/
 
 /* Estilização dos botões, transição de troca de cor e adicionar sombra,
 ao passar o mouse*/
-.btinicio,
-.btlista,
-.btsobre {
- background-color: #BB9EEB;
-  border: none;
-  color: #ffffff;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  transition: box-shadow 0.4s, background-color 0.4s;
+.botoes button {
+    background-color: #BB9EEB;
+    border: none;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: "Quicksand", sans-serif;
+    transition: box-shadow 0.4s, background-color 0.4s;
 }
 
 /* Animação de troca de cor e sombras */
-.btinicio:hover,
-.btlista:hover,
-.btsobre:hover {
+.botoes button:hover {
     background-color: #483C5A;
     color: #ffffff;
     box-shadow: 0 2px 8px #0000004d;
@@ -81,13 +78,11 @@ ao passar o mouse*/
 p {
     color: #f0f8ff;
     font-size: 2rem;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 h1 {
     color: #f0f8ff;
     font-size: 3.5rem;
-    font-family: 'Roboto', sans-serif;
 }
 
 .nome {
@@ -98,23 +93,22 @@ h1 {
 
 /* .giticon img|.giticon|.giticon .git juntos eles alinham a imagem
 e o texto lado a lado e movem eles de posição */
-.giticon img {
-    position: relative;
-    right: 10px;
-    top: 10px;
-    max-width: 70px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
 .giticon {
     display: flex;
     flex-direction: row;
     align-items: center;
     text-decoration: none;
+    gap: 10px;
 }
 
-.giticon .git{
-    margin-bottom: 10px;
+.giticon img {
+    height: auto;
+    max-width: 64px;
+}
+
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
