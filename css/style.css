@@ -1,44 +1,120 @@
-.btinicio {
-    background-color: #650e7a;
-    color: #fff;
-    padding: 12px 28px;
-    border: none;
-    border-radius: 6px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-.btinicio:hover {
-    background-color: #210831;
-    color: #fff;
+/* Fundo com Imagem e gradiente */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+        background-image: 
+        radial-gradient(circle, #00000099 50%, #6328774f 100%), 
+        url(../img/Fundo.png);
+    background-size: cover;
+    background-position: center;
 }
 
-.btlista {
-    background-color: #650e7a;
-    color: #fff;
-    padding: 12px 28px;
-    border: none;
-    border-radius: 6px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-.btlista:hover {
-    background-color: #210831;
-    color: #fff;
+/* Para deixar no meio o .principal */
+.containerp {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+/* Estilização do .principal, lagura e altura fixas,
+borda arredondada, fundo translúcido e tudo dentro do .principal centralizado */
+.principal {
+    width: 500px;
+    min-height: 300px;
+    padding: 40px;
+    border: 10px solid #6328774f;
+    border-radius: 20%;
+    background-color: #8c51eb4d;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilização dos botões, barra reta no topo e 
+centralização dos botões*/
+.botoes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    background: #8B51EB;
+    padding: 30px 0;
+    z-index: 10;
+    box-shadow: 0 2px 8px #0000004d;
+}
+
+/* Estilização dos botões, transição de troca de cor e adicionar sombra,
+ao passar o mouse*/
+.btinicio,
+.btlista,
 .btsobre {
-    background-color: #650e7a;
-    color: #fff;
-    padding: 12px 28px;
-    border: none;
-    border-radius: 6px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background 0.3s;
+ background-color: #BB9EEB;
+  border: none;
+  color: #ffffff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: box-shadow 0.4s, background-color 0.4s;
 }
+
+/* Animação de troca de cor e sombras */
+.btinicio:hover,
+.btlista:hover,
 .btsobre:hover {
-    background-color: #210831;
-    color: #fff;
+    background-color: #483C5A;
+    color: #ffffff;
+    box-shadow: 0 2px 8px #0000004d;
+}
+
+/* p|h1|.nome definem a cor, tamanho, fonte e posição (no caso do .nome) */
+p {
+    color: #f0f8ff;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    color: #f0f8ff;
+    font-size: 3.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nome {
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+/* .giticon img|.giticon|.giticon .git juntos eles alinham a imagem
+e o texto lado a lado e movem eles de posição */
+.giticon img {
+    position: relative;
+    right: 10px;
+    top: 10px;
+    max-width: 70px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.giticon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+
+.giticon .git{
+    margin-bottom: 10px;
 }
