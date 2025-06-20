@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de jogo</title>
+    <!--Importar o CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Importar a fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="fundo"></div>
+    <!--Div com classe para os botões-->
+    <div class="botoes">
+      <!--Leva para o Inicio-->
+      <a href="index.html">
+        <button>Inicio</button>
+      </a>
+      <!--Leva para a sua lista-->
+      <a href="formaction.html">
+        <button>Lista</button>
+      </a>
+      <!--Leva para o sobre do site-->
+      <a href="about.html">
+        <button>Sobre</button>
+      </a>
+    </div>
+    <!-- importando o javascript -->
+    <script src="js/script.js"></script> 
+    <!--Classe para o container do formulario-->
+    <div class="container-form">
+      <!--Classe para o quadrado do formulario-->
+      <div class="formulario">
+        <!-- Formulario para cadastrar jogo -->
+        <form id="form-jogo" method="get" action="formaction.html">
+          <label for="nome-game">Nome do jogo:</label>
+          <input type="text" id="nome-game" name="nome-game" required />
+          <label for="genero-game">Gênero do jogo:</label>
+          <select id="genero-game" name="genero-game" required>
+            <option value="acao">Ação</option>
+            <option value="aventura">Aventura</option>
+            <option value="rpg">RPG</option>
+            <option value="mmorpg">MMORPG</option>
+            <option value="estrategia">Estratégia</option>
+            <option value="simulacao">Simulação</option>
+            <option value="esporte">Esporte</option>
+            <option value="corrida">Corrida</option>
+            <option value="outros">Outros</option>
+          </select>
+          <label for="plataforma-game">Plataforma do jogo:</label>
+          <select id="plataforma-game" name="plataforma-game" required>
+            <option value="pc">PC</option>
+            <option value="ps4">PlayStation 4</option>
+            <option value="xbox-one">Xbox One</option>
+            <option value="switch">Nintendo Switch</option>
+            <option value="mobile">Mobile</option>
+            <option value="outros">Outros</option>
+          </select>
+          <label for="horas">Horas jogadas em minutos:</label>
+          <input type="number" id="horas" name="horas" min="0" />
+          <button type="submit">Cadastrar Jogo</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
