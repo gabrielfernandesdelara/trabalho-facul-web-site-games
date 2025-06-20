@@ -1,114 +1,211 @@
 /* Fundo com Imagem e gradiente */
 body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    box-sizing: border-box;
-        background-image: 
-        radial-gradient(circle, #00000099 50%, #6328774f 100%), 
-        url(../img/Fundo.png);
-    background-size: cover;
-    background-position: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-image: radial-gradient(circle, #00000099 50%, #6328774f 100%),
+    url(../img/Fundo.png);
+  background-size: cover;
+  background-position: center;
 }
 
 /* Para deixar no meio o .principal */
 .container-principal {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Estilização do .principal, lagura e altura fixas,
 borda arredondada, fundo translúcido e tudo dentro do .principal centralizado */
 .principal {
-    width: 500px;
-    min-height: 300px;
-    padding: 40px;
-    border: 10px solid #6328774f;
-    border-radius: 36px;
-    background-color: #8c51eb4d;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 500px;
+  min-height: 200px;
+  padding: 16px;
+  border: 10px solid #6328774f;
+  border-radius: 36px;
+  background-color: #8c51eb4d;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Estilização dos botões, barra reta no topo e 
 centralização dos botões*/
 .botoes {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    background: #8B51EB;
-    padding: 30px 0;
-    z-index: 10;
-    box-shadow: 0 2px 8px #0000004d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  background: #8b51eb;
+  padding: 30px 0;
+  z-index: 10;
+  box-shadow: 0 2px 8px #0000004d;
 }
 
 /* Estilização dos botões, transição de troca de cor e adicionar sombra,
 ao passar o mouse*/
 .botoes button {
-    background-color: #BB9EEB;
-    border: none;
-    color: #ffffff;
-    padding: 15px 32px;
-    text-align: center;
-    border-radius: 8px;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    font-family: "Quicksand", sans-serif;
-    transition: box-shadow 0.4s, background-color 0.4s;
+  background-color: #bb9eeb;
+  border: none;
+  color: #ffffff;
+  padding: 15px 32px;
+  text-align: center;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
+  transition: box-shadow 0.4s, background-color 0.4s;
 }
 
 /* Animação de troca de cor e sombras */
 .botoes button:hover {
-    background-color: #483C5A;
-    color: #ffffff;
-    box-shadow: 0 2px 8px #0000004d;
+  background-color: #483c5a;
+  color: #ffffff;
+  box-shadow: 0 2px 8px #0000004d;
 }
 
 /* p|h1|.nome definem a cor, tamanho, fonte e posição (no caso do .nome) */
 p {
-    color: #f0f8ff;
-    font-size: 2rem;
+  color: #f0f8ff;
+  font-size: 2rem;
 }
 
 h1 {
-    color: #f0f8ff;
-    font-size: 3.5rem;
+  color: #f0f8ff;
+  font-size: 3.5rem;
 }
 
 .nome {
-    text-align: center;
-    position: relative;
-    bottom: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 20px;
+}
+
+/* Botão para fazer o formulario de cadastro de jogo estilizado, com um gradiente de cor,
+bordas arredondadas, tamanho, font e sombra */
+.cadastro {
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  color: #ffffff;
+  border: none;
+  border-radius: 16px;
+  padding: 16px 40px;
+  font-size: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px #0000004d;
+  transition: background-color 0.3s, transform 0.3s;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.cadastro:hover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 24px #00000066;
 }
 
 /* .giticon img|.giticon|.giticon .git juntos eles alinham a imagem
 e o texto lado a lado e movem eles de posição */
 .giticon {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-decoration: none;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
 }
 
 .giticon img {
-    height: auto;
-    max-width: 64px;
+  height: auto;
+  max-width: 64px;
 }
 
+/* Define a font Quicksand para todos os elementos com a classe "quicksand" */
 .quicksand {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+/* Para deixar no meio o .formulario */
+.container-form {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilização do .formulario, lagura e altura fixas,
+borda arredondada, fundo um pouco translúcido, e box shadow para 
+dar um efeito de profundidade*/
+.formulario {
+  width: 700px;
+  min-height: 340px;
+  padding: 40px 32px;
+  border: 10px solid #63287762;
+  border-radius: 16px;
+  background-color: #8757d4a8;
+  box-shadow: 8px 8px 8px #0d011fa8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Define a cor, tamanho e font dos label */
+.formulario label {
+  color: #f0f8ff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Centraliza e estiliza as caixas do input e select com um box shadow
+para dar um efeito de profundidade, e coloca o tamanho e font doq tem dentro */
+.formulario input,
+.formulario select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 2px solid #63287762;
+  border-radius: 4px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 10);
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  background-color: #ffffff;
+}
+
+/* Estiliza o botão de cadastro, com um gradiente de cor,
+bordas arredondadas, tamanho, font e sombra */
+.formulario button {
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  color: #ffffff;
+  border: none;
+  border-radius: 16px;
+  padding: 16px 40px;
+  font-size: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 10);
+  transition: background-color 0.3s, transform 0.3s;
+  letter-spacing: 1px;
+  margin-left: 200px;
+}
+
+/* Animação de zoom no botão cadastro */
+.formulario button:hover {
+  transform: scale(1.07);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 10);
 }
