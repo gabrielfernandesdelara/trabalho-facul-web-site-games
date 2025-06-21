@@ -209,3 +209,71 @@ bordas arredondadas, tamanho, font e sombra */
   transform: scale(1.07);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 10);
 }
+
+/* Para deixar no meio o .dados-jogos */
+.container-dados {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilização do .dados-jogos, deixa as infos no centro,
+estiliza a font e não deixa a linha quebrar */
+.dados-jogos {
+  width: 700px;
+  min-height: 340px;
+  padding: 40px 72px;
+  border: 10px solid #63287762;
+  border-radius: 16px;
+  background-color: #8757d4a8;
+  box-shadow: 8px 8px 8px #0d011fa8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f0f8ff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Para deixar no meio o .sobre */
+.containersobre {
+  min-height: 115vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilização do .sobre, deixando o sobre no canto */
+.sobre {
+  width: 800px;
+  min-height: 340px;
+  padding: 0 42px;
+  border: 10px solid #63287762;
+  border-radius: 16px;
+  background-color: #8757d4a8;
+  box-shadow: 8px 8px 8px #0d011fa8;
+  display: flex-start;
+  flex-direction: column;
+  align-items: left;
+}
+
+/* Deixando o Planos como um título */
+.planos {
+  font-size: 2.0rem;
+  color: #f0f8ff;
+  font-family: "Quicksand", sans-serif;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* Deixando o Inspirações como um título */
+.inspiracao {
+  font-size: 2.0rem;
+  color: #f0f8ff;
+  font-family: "Quicksand", sans-serif;
+  flex-direction: column;
+  text-align: left;
+}
