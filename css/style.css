@@ -212,7 +212,7 @@ bordas arredondadas, tamanho, font e sombra */
 
 /* Para deixar no meio o .dados-jogos */
 .container-dados {
-  min-height: 100vh;
+  min-height: 115vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -221,9 +221,9 @@ bordas arredondadas, tamanho, font e sombra */
 /* Estilização do .dados-jogos, deixa as infos no centro,
 estiliza a font e não deixa a linha quebrar */
 .dados-jogos {
-  width: 700px;
+  width: 800px;
   min-height: 340px;
-  padding: 40px 72px;
+  padding: 0 72px;
   border: 10px solid #63287762;
   border-radius: 16px;
   background-color: #8757d4a8;
